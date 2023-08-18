@@ -1,0 +1,55 @@
+#class{
+    background-color: rgb(34, 24, 231);
+}
+.custom_container{
+    background-color: rgb(84, 197, 239);
+}
+.modal-body{
+    background-color: aqua;
+}
+.modal-header{
+    background-color: azure;
+}
+/* .container1{
+    align-items: center;
+    justify-content: space-evenly;
+} */
+.search-input{
+	border: 2px solid red;
+}
+.span1{
+	border: 2px solid red;
+	color: red;
+	font-size: 25px;
+	text-align: center;
+
+}
+.custom-5{
+	border: 3px solid rgb(10, 70, 85);
+	color: red;
+	font-size: 25px;
+	text-align: center;
+}
+.new{
+	text-align: left;
+}
+.custom-6{
+	text-align: left;
+	font-size: 25px;
+}
+.navbar-brand{
+	border: 8px solid rgb(10,70,85);
+	color: red;
+	font-size: 25px;
+	text-align: left;
+}
+/* .custom-7{
+	border: 1px solid rgb(10, 70, 85);
+	color: red;
+	font-size: 25px;
+	text-align: center;
+} */
+#jstext{
+	color: red;
+	font-size:20px
+}

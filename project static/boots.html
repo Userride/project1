@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="boots.css">
+    <title>mediguide</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="a2.png"height=50px><img src="a2.png" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./boots.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="/contact.html">Contact us</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <!-- <a class="dropdown-item" href="#">medical info</a>
+                  <a class="dropdown-item" href="#">Health</a> -->
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Support</a>
+                  <a class="dropdown-item" href="#">Write for us</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+            </li>
+          </ul>
+           <form class="form-inline my-2 my-lg-0">
+            
+            <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+          </form> 
+          <div class="mx-2">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">Signup</button>
+          </div>
+        </div>
+      </nav>
+      <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginmodal">
+  Launch demo modal
+</button> -->
+
+<!--  loginModal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login to Health Navigator</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- password -->
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signuoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Get a Health Navigator account</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body ">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group">
+            <label for="cxampleInputPassword1"> Confirm Password</label>
+            <input type="password" class="form-control" id="cxampleInputPassword1">
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Create Account</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="v9.webp "height=500px class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <!-- <h1 style="color:rgb(242, 8, 8)"> Welcome to <img src="d7.jpg"height=80px></h1>
+               -->
+               <font color="RED"><b>Health and Medicine
+              </b></font>
+              <p>
+                
+              </p>
+                <button class="btn btn-danger">Keep healthy</button>
+                <button class="btn btn-primary">keep safe</button>
+                <button class="btn btn-success">wear mask</button>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="v3.jpg" height=500px class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h1 style="color:rgb(8, 242, 12)"> Welcome to <img src="a3.png"height=30px></h1> -->
+              <font color="RED"><b>Health and Medicine
+                  </b></font>
+                  <p>
+                    
+                  </p>
+              <button class="btn btn-danger">medicine world</button>
+              <button class="btn btn-primary">keep safe</button>
+              <button class="btn btn-success">medicine</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="v2.jpg"height=500px width=100px class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h1 style="color:rgb(27, 8, 242)" > Welcome to <img src="a3.png"height=30px></h1> -->
+              <font color="RED"><b>Health and Medicine
+              </b></font>
+              <p>
+                
+              </p>
+              <button class="btn btn-danger">pharmacy</button>
+              <button class="btn btn-primary">drugs</button>
+              <button class="btn btn-success">keep healthy</button>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+
+      <div class="container-fluid custom-cont my-4 min-vh-2">
+        <div class="d-flex justify-content-center mt-2">
+          <a class="btn btn-outline-danger fw-bold fs-3 custom-4 mt-9"> <img src="hn.jpg"height=100px></a>
+        </div>
+        <style>
+          .custom-4 {
+            position: relative;
+            animation: moveX 2.5s ease-in-out infinite;
+          }
+  
+          .custom-4:hover {
+            animation-play-state: paused;
+          }
+  
+          @keyframes moveX {
+            0% {
+              left: -100px;
+            }
+  
+            50% {
+              left: 100px;
+            }
+  
+            100% {
+              left: -100px;
+            }
+          }
+          
+        </style>
+        <!-- <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+          <div class="col-md-6 p-lg-5 mx-auto my-5">
+            <h1 class="display-3 fw-bold">Designed for engineers</h1>
+            <h3 class="fw-normal text-muted mb-3">Build anything you want with Aperture</h3>
+            <div class="d-flex gap-3 justify-content-center lead fw-normal">
+  
+  
+            </div> -->
+          </div>
+          <!-- <div class="product-device shadow-sm d-none d-md-block"></div>
+          <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div> -->
+        </div>
+      </div>
+      <div class="container my-4 mx=4">
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Safety</strong>
+                <h3 class="mb-0">Consult to Doctor</h3>
+                <div class="mb-1 text-muted">Nov 12</div>
+                <p class="card-text mb-auto">24/7 services is avaliable.</p>
+                <a href="#
+                " class="stretched-link">Consult now</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img class="bd-placeholder-img" width="200" height="250" src ="s2.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success">Health</strong>
+                <h3 class="mb-0">Know about your diseases</h3>
+                <div class="mb-1 text-muted">  </div>
+                <p class="mb-auto">Update yourself about various diseases and their recent remedial measures.</p>
+                <a href="./Consult now.html" class="stretched-link">Learn More.</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img class="bd-placeholder-img" width="200" height="250" src="v1.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-4 mx=4">
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Health</strong>
+                <h3 class="mb-0">Diet Chart and BMI Index</h3>
+                <div class="mb-1 text-muted">   </div>
+                <p class="card-text mb-auto">Check your health by answering a few Simple Questions</p>
+                <a href="./cheak now.html" class="stretched-link">Check now</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img class="bd-placeholder-img" width="200" height="250" src ="bmi.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success">Care</strong>
+                <h3 class="mb-0">Diagnostic centre</h3>
+                <div class="mb-1 text-muted">   </div>
+                <p class="mb-auto">Diagonise yourself on the basis of your symptoms</p>
+                <a href="https://endlessmedical.com/endlessmedicalprovider-apis-demo-app/" class="stretched-link">Consult now</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img class="bd-placeholder-img" width="200" height="250" src="s6.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          <footer class="container">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p>© 2023-2024 health navigator, Inc. ·  ·</p>
+          </footer>
+          <!-- Contact -->
+<!-- <div class="w3-white" id="Contact">
+  <div class="w3-container w3-padding-32">
+    <div class="w3-center w3-padding-32">
+<h2 class="w3-wide">CONTACT</h2>
+ <p class="w3-opacity"><i>Book now or just send us a message</i></p><br>
+<p class="w3-white w3-text-black w3-left-align">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra rhoncus suscipit. Integer eget leo pretium, vulputate velit sit amet, aliquam est. Pellentesque a malesuada orci, at rhoncus enim. Suspendisse at dictum arcu. Etiam tempus varius sem, at pretium augue fringilla et. Curabitur tempus sollicitudin congue. Aliquam in malesuada eros. Nunc ullamcorper sagittis augue a ornare. Aenean faucibus finibus sollicitudin. Nullam interdum tellus mauris, et mattis libero accumsan vitae. Suspendisse et dui accumsan, lacinia leo in, aliquam felis. Aliquam tortor tellus, egestas tristique orci at, rutrum lacinia orci.
+      </p>
+      </div>
+<form action="/action_page.php" target="_blank">
+<p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+<p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Contact" required name="contact"></p>
+<p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+<p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+<p><button class="w3-button w3-round w3-pale-red w3-block" type="submit">SEND MESSAGE</button></p>
+</form>
+</div>
+</div> -->
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

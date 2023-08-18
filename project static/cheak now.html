@@ -1,0 +1,255 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="boots.css">
+    <title>mediguide</title>
+  </head>
+  <body >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="a2.png"height=50px><img src="a2.png" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="./boots.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="/contact.html">Contact us</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Topics
+              </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <!-- <a class="dropdown-item" href="#">medical info</a>
+                  <a class="dropdown-item" href="#">Health</a> -->
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Support</a>
+                  <a class="dropdown-item" href="#">Write for us</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+            </li>
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>
+      </nav>
+
+      <!DOCTYPE html>
+<html>
+<head>
+    <title>BMI Calculator</title>
+</head>
+<body style="border: 1px solid rgb(10, 70, 85);
+color: red;
+font-size: 25px;
+text-align: center;">
+    <h1 style="text-align:center;  text-transform: uppercase; color: rgb(15, 52, 217)"><big><big><big><u>BMI Calculator</u></big></big></big></h1>
+    <label for="weight">Weight (kg):</label>
+    <input type="number" id="weight" placeholder="0.0" step="0.01">
+    <br>
+    <label for="height">Height (ft):</label>
+    <input type="number" id="height" placeholder="0.0" step="0.01">
+    <br>
+    <button onclick="BMI()">Calculate BMI</button>
+    <p> <span id="result"></span></p>
+    <p> <span id="result"></span></p>
+    <script>
+        function BMI() {
+            let weight = parseFloat(document.getElementById("weight").value);
+            let height = parseFloat(document.getElementById("height").value);
+            if (isNaN(weight) || isNaN(height)) {
+                document.getElementById("result").textContent = "Invalid Input";
+                return;
+            }
+            let bmi = weight / ((height/3.28) * (height/3.28));
+          if (height!=0 && weight!=0){
+            if (bmi<18.5)
+            {
+                document.write("Your BMI score is: "+document.getElementById("result").textContent, bmi.toFixed(2)+"<br>");
+                document.write(""+"<br>");
+                document.write("You are Underweight. Here is a proper diet chart to bring you back in form!!!"+"<br>");
+                document.write(""+"<br>");
+                document.write("Breakfast:"+"<br>");
+                document.write("Whole grain cereal with milk or yogurt"+"<br>");
+                document.write("A banana or another piece of fruit"+"<br>");
+                document.write("A handful of nuts or seeds"+"<br>");
+                document.write(""+"<br>");
+                document.write("Mid-Morning Snack:"+"<br>");
+                document.write("Greek yogurt with honey and mixed berries"+"<br>");
+                document.write(""+"<br>");
+                document.write("Lunch:"+"<br>");
+                document.write("Grilled chicken or tofu salad with lots of colorful vegetables"+"<br>");
+                document.write("Quinoa or brown rice as a side"+"<br>");
+                document.write("Olive oil-based dressing"+"<br>");
+                document.write(""+"<br>");
+                document.write("Afternoon Snack:"+"<br>");
+                document.write("Hummus with carrot and cucumber sticks"+"<br>");
+                document.write(""+"<br>");
+                document.write("Dinner:"+"<br>");
+                document.write("Baked fish or lentil stew"+"<br>");
+                document.write("Steamed vegetables (broccoli, spinach, etc.)"+"<br>");
+                document.write("Sweet potato or whole grain bread"+"<br>");
+                document.write(""+"<br>");
+                document.write("Evening Snack:"+"<br>");
+                document.write("A fruit smoothie with milk or a milk alternative, banana, peanut butter, and a handful of oats"+"<br>");
+                document.write(""+"<br>");
+                document.write("Before Bed Snack:"+"<br>");
+                document.write("Cottage cheese with a sprinkle of nuts"+"<br>");
+                document.write(""+"<br>");
+                document.write("Tips:"+"<br>");
+                document.write("1. Increase portion sizes to provide more calories."+"<br>");
+                document.write("2. Incorporate healthy fats like avocados, nuts, and olive oil into your meals."+"<br>");
+                document.write("3. Include protein-rich foods like lean meats, poultry, fish, eggs, legumes, and dairy products to help build muscle mass."+"<br>");
+                document.write("4. Opt for nutrient-dense snacks like nuts, seeds, dried fruits, and yogurt."+"<br>");
+                document.write("5. Focus on consuming foods with higher energy density, like whole grains and healthy fats."+"<br>");
+                document.write("6. Stay hydrated by drinking fluids throughout the day."+"<br>");
+                document.write(""+"<br>");
+                document.write("Remarks:"+"<br>");
+                document.write("Remember that gradual and consistent weight gain is the goal. It's important to gain weight in a healthy manner, focusing on nutrient-rich foods rather than relying on sugary or processed foods. Consulting a healthcare professional will help ensure that your weight gain plan is safe and appropriate for your individual needs. Also try and consume atleast 4 -5 litres of water at a regular basis and try and follow a proper sleep schedule of 12 to 6 every night."+"<br>");
+            }else if (bmi>=18.5 && bmi<25){
+                document.write("Your BMI score is: "+document.getElementById("result").textContent, bmi.toFixed(2)+"<br>");
+                document.write(""+"<br>");
+                document.write("You have a pretty moderate weight. Here is a diet chart for you to keep up just in shape."+"<br>");
+                document.write(""+"<br>");
+                document.write("Breakfast:"+"<br>");
+                document.write("Whole-grain cereal with low-fat milk or yogurt"+"<br>");
+                document.write("Fresh fruit like a banana or berries"+"<br>");
+                document.write(""+"<br>");
+                document.write("Mid-morning Snack:"+"<br>");
+                document.write("Handful of nuts (almonds, walnuts, etc.)"+"<br>");
+                document.write("Carrot sticks or cucumber slices"+"<br>");
+                document.write(""+"<br>");
+                document.write("Lunch:"+"<br>");
+                document.write("Grilled chicken or tofu salad with a variety of vegetables"+"<br>");
+                document.write("Whole-grain bread or brown rice"+"<br>");
+                document.write(""+"<br>");
+                document.write("Afternoon Snack:"+"<br>");
+                document.write("Greek yogurt with a drizzle of honey"+"<br>");
+                document.write("Apple slices or a small portion of whole-grain crackers"+"<br>");
+                document.write(""+"<br>");
+                document.write("Dinner:"+"<br>");
+                document.write("Baked fish or lentil curry"+"<br>");
+                document.write("Steamed vegetables like broccoli, cauliflower, and carrots"+"<br>");
+                document.write("Quinoa or whole-grain pasta"+"<br>");
+                document.write(""+"<br>");
+                document.write("Before Bed:"+"<br>");
+                document.write("A glass of warm milk or herbal tea"+"<br>");
+                document.write(""+"<br>");
+                document.write("Tips:"+"<br>");
+                document.write("1.Performing yoga helps to maintain a healthy body."+"<br>");
+                document.write("2.Proper sleeping schedule and morning walks will help to clean up the mind and avoid any sort of mental fatique throughout the day."+"<br>");
+                document.write(""+"<br>");
+                document.write("Remarks:"+"<br>");
+                document.write("Portion control and staying hydrated are important. Also, tailor the diet to your individual preferences and any dietary restrictions you might have. It's a good idea to consult a nutritionist or healthcare professional before making significant changes to your diet."+"<br>");
+        }else if(bmi>=25 && bmi<35){
+                document.write("Your BMI score is: "+document.getElementById("result").textContent, bmi.toFixed(2)+"<br>");
+                document.write(""+"<br>");
+                document.write("You are obese. Here is a diet chart to lead you to a healthy life."+"<br>");
+                document.write(""+"<br>");
+                document.write("Breakfast:"+"<br>");
+                document.write("Oatmeal with low-fat milk and berries"+"<br>");
+                document.write("Boiled egg or a small serving of lean turkey bacon"+"<br>");
+                document.write(""+"<br>");
+                document.write("Mid-morning Snack:"+"<br>");
+                document.write("Greek yogurt with a sprinkle of nuts and seeds"+"<br>");
+                document.write("Sliced cucumber or celery sticks"+"<br>");
+                document.write(""+"<br>");
+                document.write("Lunch:"+"<br>");
+                document.write("Grilled chicken or tofu salad with plenty of vegetables"+"<br>");
+                document.write("Whole-grain bread or brown rice"+"<br>");
+                document.write(""+"<br>");
+                document.write("Afternoon Snack:"+"<br>");
+                document.write("Hummus with carrot and bell pepper sticks"+"<br>");
+                document.write("A small handful of almonds or walnuts"+"<br>");
+                document.write(""+"<br>");
+                document.write("Dinner:"+"<br>");
+                document.write("Baked fish or skinless chicken breast"+"<br>");
+                document.write("Steamed or roasted vegetables"+"<br>");
+                document.write("Quinoa or sweet potatoes"+"<br>");
+                document.write(""+"<br>");
+                document.write("Evening Snack:"+"<br>");
+                document.write("Air-popped popcorn (plain, no added butter or salt)"+"<br>");
+                document.write(""+"<br>");
+                document.write("Herbal tea or water"+"<br>");
+                document.write(""+"<br>");
+                document.write("Tip:"+"<br>");
+                document.write("1. Try hitting to the gym to reach to a steady weight faster"+"<br>");
+                document.write("2. Avoid any kind of outside (mainly oily) food"+"<br>");
+                document.write(""+"<br>");
+                document.write("Remarks:"+"<br>");
+                document.write("The key is to create a calorie deficit while still providing your body with essential nutrients. Consulting a registered dietitian or healthcare professional is advisable before making any major dietary changes. Additionally, regular exercise and lifestyle modifications are important components of a holistic approach to managing obesity."+"<br>");
+        }else if (bmi>=35){
+                document.write("Your BMI score is: "+document.getElementById("result").textContent, bmi.toFixed(2)+"<br>");
+                document.write(""+"<br>");
+                document.write("You are extremely overweight. Follow this diet chart to get back in shape."+"<br>");
+                document.write(""+"<br>");
+                document.write("Breakfast:"+"<br>");
+                document.write("Scrambled eggs with lots of vegetables"+"<br>");
+                document.write("Whole-grain toast or a small serving of oatmeal"+"<br>");
+                document.write(""+"<br>");
+                document.write("Mid-morning Snack:"+"<br>");
+                document.write("Greek yogurt with a mix of seeds (chia, flax, etc.)"+"<br>");
+                document.write("Sliced cucumber, celery, or bell pepper"+"<br>");
+                document.write(""+"<br>");
+                document.write("Lunch:"+"<br>");
+                document.write("Grilled lean protein (chicken, turkey, fish) with plenty of vegetables"+"<br>");
+                document.write("Quinoa or brown rice"+"<br>");
+                document.write(""+"<br>");
+                document.write("Afternoon Snack:"+"<br>");
+                document.write("Hummus with carrot and celery sticks"+"<br>");
+                document.write("A small portion of low-fat cheese or cottage cheese"+"<br>");
+                document.write(""+"<br>");
+                document.write("Dinner:"+"<br>");
+                document.write("Baked or grilled lean protein with a variety of non-starchy vegetables"+"<br>");
+                document.write(""+"<br>");
+                document.write("A small serving of whole-grain pasta or sweet potatoes"+"<br>");
+                document.write(""+"<br>");
+                document.write("Evening Snack:"+"<br>");
+                document.write("A piece of fruit or a small handful of mixed nuts"+"<br>");
+                document.write("Herbal tea or water"+"<br>");
+                document.write(""+"<br>");
+                document.write("Tip:"+"<br>");
+                document.write("1. Try hitting to the gym to reach to a steady weight faster"+"<br>");
+                document.write("2. Avoid any kind of outside (mainly oily) food"+"<br>");
+                document.write(""+"<br>");
+                document.write("Remarks:"+"<br>");
+                document.write("The focus should be on creating a calorie deficit through portion control, nutrient-dense foods, and regular physical activity. Extreme calorie restrictions or crash diets should be avoided, as they can be harmful. A healthcare professional can help tailor this plan to your specific needs, monitor your progress, and adjust accordingly. Additionally, addressing any underlying medical conditions and psychological factors is important for a comprehensive approach to weight management."+"<br>");
+                document.write(""+"<br>");
+            }
+            else{
+                document.write("Invalid Input.Try again..."+"<br>");
+            }}
+            else{
+                document.write("Invalid Input.Try again..."+"<br>");
+            }
+         }
+    </script>
+</body>
+</html>
+      
+      
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
